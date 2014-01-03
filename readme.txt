@@ -1,3 +1,3 @@
-FWK_All
+Free World Kit
 
-This branch is the final game assembly branch, combining the final results of all the other branches.
+This project is a free compilation of various tools and techniques for creating an online multiplayer virtual world environment in Unity3D.
