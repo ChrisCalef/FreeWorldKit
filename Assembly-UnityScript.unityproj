@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{71D58F20-72A1-026A-4DBE-B30844440DD2}</ProjectGuid>
+	<ProjectGuid>{71D9D05A-7F14-850A-F442-BE8DDCE86CFB}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,6 +47,20 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Locomotion Setup\Scripts\SmoothFollow.js" />
+     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
+     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+ <Reference Include="RAIN">
+ <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

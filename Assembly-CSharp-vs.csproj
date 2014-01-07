@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{98356CB5-D379-6807-307B-65A61F5A88A8}</ProjectGuid>
+	<ProjectGuid>{5B6F67BF-355C-3CA0-0CBE-BD734FD95FD9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,9 +46,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AI\Actions\TestAction.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\JoystickToEvents.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\LocomotionPlayer.cs" />
+     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
+     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+ <Reference Include="RAIN">
+ <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
