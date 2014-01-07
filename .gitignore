@@ -4,4 +4,5 @@
 *.meta
 
 #ignore anything in Library/metadata
-Library/metadata
+Library/metadata/*
+Temp/*
