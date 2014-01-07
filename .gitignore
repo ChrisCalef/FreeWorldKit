@@ -1,0 +1,6 @@
+# .gitignore for FreeWorldKit
+
+#ignore .meta files from Unity
+*.meta
+
+
