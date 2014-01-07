@@ -270,7 +270,20 @@ public abstract class TickedVehicle : Vehicle
 			{
 				newForward = Vector3.Slerp(Transform.forward, newForward, deltaTime / TurnTime);
 			}
+			
+			Vector3 crossProd = Vector3.Cross(Transform.forward,newForward);
+			if (animator)
+			{
+				animator.SetFloat ("Speed",Velocity.magnitude);
+				float angularSpeed = crossProd.y * 5000.0f;
+				//animator.SetFloat ("AngularSpeed",angularSpeed);
+				//if (crossProd.magnitude > 0.0001f)
+				//	Debug.Log ("Turning, orientation = " + OrientationVelocity + 
+				 //          " angularSpeed " + angularSpeed + " cross " + crossProd.y +
+				//	           " magnitude " + crossProd.magnitude);
+			}
 			Transform.forward = newForward;
+
 		}
 	}
 

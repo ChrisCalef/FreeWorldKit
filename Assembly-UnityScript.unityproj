@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{71D58F20-72A1-026A-4DBE-B30844440DD2}</ProjectGuid>
+	<ProjectGuid>{71D9D05A-7F14-850A-F442-BE8DDCE86CFB}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,6 +47,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Locomotion Setup\Scripts\SmoothFollow.js" />
+     <Compile Include="Assets\Sources\GUIControls.js" />
+     <Compile Include="Assets\Sources\SmoothFollow2d.js" />
+     <Compile Include="Assets\Sources\~ControlScripts\DragTransform.js" />
+     <None Include="Assets\TickedPriorityQueue\LICENSE.txt" />
+     <None Include="Assets\License.txt" />
+ <Reference Include="TickedPriorityQueue">
+ <HintPath>Assets\TickedPriorityQueue\TickedPriorityQueue.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

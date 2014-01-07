@@ -69,6 +69,28 @@ public class Biped : TickedVehicle
 	public override void UpdateOrientationVelocity(Vector3 velocity)
 	{
 		Velocity = velocity;
+		
+		///// BAG /////
+//		if (animator)
+//		{
+//			animator.SetFloat ("Speed",Velocity.magnitude);
+//			//HERE: I guess we need to find angular speed on our own, was hoping that would
+//			//be a member property somewhere already but have not found it yet.
+//			//Subtract transform.forward from lastTransform.forward, * deltaTime, or something.
+//			//animator.SetFloat ("AngularSpeed",angularSpeed);
+//			float dotProd = Vector3.Dot (gameObject.transform.forward,lastForward);
+//			Vector3 crossProd = Vector3.Cross(gameObject.transform.forward,lastForward);
+//			float angBetween = Vector3.Angle(gameObject.transform.forward,lastForward);
+//			//float angularSpeed = (1.0f - dotProd) * -100.0f; //MAYBE??
+//			float angularSpeed = crossProd.y * -100.0f;
+//			animator.SetFloat ("AngularSpeed",angularSpeed);
+//			Debug.Log ("setting animator speed: " + Velocity.magnitude + 
+//			           " lastForward " + lastForward + "  dot  " + dotProd + 
+//			           " angularSpeed " + angularSpeed + " angle " + angBetween +
+//			           " cross prod " + crossProd );
+//			lastForward = gameObject.transform.forward;
+//		}
+		///// BAG /////
 	}
 
 	protected override Vector3 CalculatePositionDelta(float deltaTime)

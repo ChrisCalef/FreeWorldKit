@@ -85,8 +85,8 @@ public abstract class Vehicle : DetectableObject
 	public Vector3 DesiredVelocity { get; protected set; }
     
     public GameObject GameObject { get; private set; }
-	
-	
+
+
 	/// <summary>
 	/// Does the vehicle move in Y space?
 	/// </summary>
@@ -229,6 +229,11 @@ public abstract class Vehicle : DetectableObject
 	/// </remarks>
 	public float DesiredSpeed { get; protected set; }
 	
+	///// BAG /////
+	public Animator animator;
+	public Vector3 lastForward;
+	///// BAG /////
+	/// 
 	#endregion
 
 	#region Unity methods
@@ -237,6 +242,7 @@ public abstract class Vehicle : DetectableObject
 		base.Awake();
         GameObject = gameObject;
         Rigidbody = GetComponent<Rigidbody>();  
+
 		var allSteerings = GetComponents<Steering>();
 		Steerings = allSteerings.Where( x => !x.IsPostProcess ).ToArray();
 		SteeringPostprocessors = allSteerings.Where( x => x.IsPostProcess ).ToArray();
@@ -247,6 +253,11 @@ public abstract class Vehicle : DetectableObject
 		}
 		Radar = this.GetComponent<Radar>();
 		Speedometer = this.GetComponent<Speedometer>();
+
+		///// BAG /////
+		animator = gameObject.GetComponent<Animator>();
+		lastForward = gameObject.transform.forward;
+		///// BAG /////
 	}
 	#endregion
 	

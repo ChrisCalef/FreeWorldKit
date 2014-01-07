@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{98356CB5-D379-6807-307B-65A61F5A88A8}</ProjectGuid>
+	<ProjectGuid>{5B6F67BF-355C-3CA0-0CBE-BD734FD95FD9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,9 +46,61 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Behaviors\AutonomousVehicle.cs" />
+     <Compile Include="Assets\Behaviors\Biped.cs" />
+     <Compile Include="Assets\Behaviors\DetectableObject.cs" />
+     <Compile Include="Assets\Behaviors\DetectableObjectCreator.cs" />
+     <Compile Include="Assets\Behaviors\Examples\SteerForPathPredictiveTrivial.cs" />
+     <Compile Include="Assets\Behaviors\Examples\SteerForPathTrivial.cs" />
+     <Compile Include="Assets\Behaviors\PassiveVehicle.cs" />
+     <Compile Include="Assets\Behaviors\Radar.cs" />
+     <Compile Include="Assets\Behaviors\Speedometer.cs" />
+     <Compile Include="Assets\Behaviors\SphericalObstacleData.cs" />
+     <Compile Include="Assets\Behaviors\SteerForAlignment.cs" />
+     <Compile Include="Assets\Behaviors\SteerForCharacterEvasion.cs" />
+     <Compile Include="Assets\Behaviors\SteerForCohesion.cs" />
+     <Compile Include="Assets\Behaviors\SteerForEvasion.cs" />
+     <Compile Include="Assets\Behaviors\SteerForFear.cs" />
+     <Compile Include="Assets\Behaviors\SteerForForward.cs" />
+     <Compile Include="Assets\Behaviors\SteerForMinimumSpeed.cs" />
+     <Compile Include="Assets\Behaviors\SteerForNavmesh.cs" />
+     <Compile Include="Assets\Behaviors\SteerForNeighborGroup.cs" />
+     <Compile Include="Assets\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\Behaviors\SteerForPathSimplified.cs" />
+     <Compile Include="Assets\Behaviors\SteerForPoint.cs" />
+     <Compile Include="Assets\Behaviors\SteerForPursuit.cs" />
+     <Compile Include="Assets\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\Behaviors\SteerForSpeed.cs" />
+     <Compile Include="Assets\Behaviors\SteerForSpeedFluctuation.cs" />
+     <Compile Include="Assets\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
+     <Compile Include="Assets\Behaviors\SteerForSphericalObstacleRepulsion.cs" />
+     <Compile Include="Assets\Behaviors\SteerForTarget.cs" />
+     <Compile Include="Assets\Behaviors\SteerForTether.cs" />
+     <Compile Include="Assets\Behaviors\SteerForWander.cs" />
+     <Compile Include="Assets\Behaviors\SteerToFollow.cs" />
+     <Compile Include="Assets\Behaviors\Steering.cs" />
+     <Compile Include="Assets\Behaviors\TickedVehicle.cs" />
+     <Compile Include="Assets\Behaviors\Vehicle.cs" />
+     <Compile Include="Assets\Behaviors\VehicleLookAtOverride.cs" />
+     <Compile Include="Assets\Helpers\IRadarReceiver.cs" />
+     <Compile Include="Assets\Helpers\RandomizeStartPosition.cs" />
+     <Compile Include="Assets\Helpers\SteeringEvent.cs" />
+     <Compile Include="Assets\IPathway.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\JoystickToEvents.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\LocomotionPlayer.cs" />
+     <Compile Include="Assets\OpenSteerUtility.cs" />
+     <Compile Include="Assets\PathWay.cs" />
+     <Compile Include="Assets\Sources\Perlin.cs" />
+     <Compile Include="Assets\Sources\Utils\CharacterMotor.cs" />
+     <Compile Include="Assets\Sources\Utils\PlatformInputController.cs" />
+     <Compile Include="Assets\TickedPriorityQueue\UnityTickedQueue.cs" />
+     <Compile Include="Assets\Vector3Pathway.cs" />
+     <None Include="Assets\TickedPriorityQueue\LICENSE.txt" />
+     <None Include="Assets\License.txt" />
+ <Reference Include="TickedPriorityQueue">
+ <HintPath>Assets\TickedPriorityQueue\TickedPriorityQueue.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
