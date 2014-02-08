@@ -16,6 +16,7 @@ public class LocomotionPlayer : MonoBehaviour {
 
     private float speed = 0;
     private float direction = 0;
+	private float maxSpeed = 18.0f;
     private Locomotion locomotion = null;
 
 	// Use this for initialization
@@ -30,7 +31,7 @@ public class LocomotionPlayer : MonoBehaviour {
         if (animator && Camera.main)
 		{
             JoystickToEvents.Do(transform,Camera.main.transform, ref speed, ref direction);
-            locomotion.Do(speed * 6, direction * 180);
+			locomotion.Do(speed * maxSpeed, direction * 180);
 		}		
 	}
 }
