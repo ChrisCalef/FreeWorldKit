@@ -88,11 +88,12 @@ public class GameHUD : MonoBehaviour {
 		}
 			
 		
-		if (Input.GetButton("Escape")) {
-			Screen.showCursor = true;
-			Screen.lockCursor = false;
-		} 
-		else if (Input.GetMouseButtonDown (0) || Input.GetMouseButtonDown(1)) {
+		//if (Input.GetButton("Escape")) {
+		//	Screen.showCursor = true;
+		//	Screen.lockCursor = false;
+		//} 
+		//else 
+		if (Input.GetMouseButtonDown (0) || Input.GetMouseButtonDown(1)) {
 			LockAndHideCursor();
 		}
 		

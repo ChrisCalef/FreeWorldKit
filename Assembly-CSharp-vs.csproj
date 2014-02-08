@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{98356CB5-D379-6807-307B-65A61F5A88A8}</ProjectGuid>
+	<ProjectGuid>{5B6F67BF-355C-3CA0-0CBE-BD734FD95FD9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,9 +46,37 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Game\Scripts\AnimationSynchronizer.cs" />
+     <Compile Include="Assets\Game\Scripts\DeleteAfterSeconds.cs" />
+     <Compile Include="Assets\Game\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Game\Scripts\EnemyInfo.cs" />
+     <Compile Include="Assets\Game\Scripts\GameHUD.cs" />
+     <Compile Include="Assets\Game\Scripts\GameLayers.cs" />
+     <Compile Include="Assets\Game\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Game\Scripts\NetworkManager.cs" />
+     <Compile Include="Assets\Game\Scripts\NetworkTransform.cs" />
+     <Compile Include="Assets\Game\Scripts\NetworkTransformInterpolation.cs" />
+     <Compile Include="Assets\Game\Scripts\NetworkTransformReceiver.cs" />
+     <Compile Include="Assets\Game\Scripts\NetworkTransformSender.cs" />
+     <Compile Include="Assets\Game\Scripts\OptionsManager.cs" />
+     <Compile Include="Assets\Game\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Game\Scripts\PlayerScore.cs" />
+     <Compile Include="Assets\Game\Scripts\ProgressBar.cs" />
+     <Compile Include="Assets\Game\Scripts\ShotController.cs" />
+     <Compile Include="Assets\Game\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Game\Scripts\TimeManager.cs" />
+     <Compile Include="Assets\Game\Scripts\WalkController.cs" />
+     <Compile Include="Assets\Lobby\Scripts\ChatWindow.cs" />
+     <Compile Include="Assets\Lobby\Scripts\LobbyGUI.cs" />
+     <Compile Include="Assets\Lobby\Scripts\LoginGUI.cs" />
+     <Compile Include="Assets\Lobby\Scripts\SmartFoxConnection.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\JoystickToEvents.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\LocomotionPlayer.cs" />
+     <None Include="Assets\Game\Shaders\Lightweight-additive.shader" />
+ <Reference Include="SmartFox2">
+ <HintPath>Assets\Plugins\SmartFox2.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

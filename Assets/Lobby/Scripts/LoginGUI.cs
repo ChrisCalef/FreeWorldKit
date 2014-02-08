@@ -12,7 +12,8 @@ public class LoginGUI : MonoBehaviour {
 	private SmartFox smartFox;
 	private bool shuttingDown = false;
 
-	public string serverName = "127.0.0.1";
+	//public string serverName = "127.0.0.1";
+	public string serverName = "54.213.70.137";//(This is my server, please don't attack it.)
 	public int serverPort = 9933;
 	public string zone = "BasicExamples";
 	public bool debug = true;

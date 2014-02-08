@@ -48,7 +48,7 @@ public class World {
 
 		int healthItemsCount = itemsCount / 2;
 		int hc = 0;
-		extension.trace("Spawn " + itemsCount + " iteeeems.");
+		extension.trace("Spawn " + itemsCount + " items.");
 
 		for (int i = 0; i < itemsCount; i++) {
 			ItemType itemType = (hc++ < healthItemsCount) ? ItemType.HealthPack : ItemType.Ammo;

@@ -1,0 +1,8 @@
+# .gitignore for FreeWorldKit
+
+#ignore .meta files from Unity
+*.meta
+
+#ignore anything in Library/metadata
+Library/metadata/*
+Temp/*
