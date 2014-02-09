@@ -6,3 +6,4 @@
 #ignore anything in Library/metadata
 Library/metadata/*
 Temp/*
+Assets/RAIN/*
