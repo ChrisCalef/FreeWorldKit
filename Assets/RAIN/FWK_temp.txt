@@ -1,0 +1,1 @@
+This file is just a placeholder to make git recognize an otherwise empty folder. See RAIN_IMPORTANT_README.txt in the top project folder for instructions on acquiring and installing RAIN. After doing so you may delete this file if desired.
